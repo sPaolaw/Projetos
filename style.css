@@ -1,0 +1,242 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #d5afaf;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo da seção de perfil */
+    gap: 20px;
+    text-align: center; /* Garante que o texto da seção de perfil também fique centralizado */
+}
+
+.perfil img {
+    border-radius: 60%; /* Faz a imagem ficar redonda */
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Deve ser igual à largura para manter a forma circular */
+    object-fit: cover; /* Garante que a imagem cubra o círculo sem distorção */
+    border: 4px solid #d5afaf; /* Adiciona uma borda ao redor da imagem, opcional */
+}
+
+.info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centraliza as habilidades horizontalmente */
+}
+
+.habilidade {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 calc(33% - 40px); /* Ajusta a largura das habilidades para se adaptarem ao layout */
+    text-align: center; /* Garante que o texto dentro das habilidades fique centralizado */
+}
+
+.habilidade h3 {
+    margin-bottom: 10px;
+}
+
+.habilidade ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidade ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+.info p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.habilidade {
+    margin: 20px 0;
+}
+
+.habilidade ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidade li {
+    background-color: #fcf3f3;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.habilidade li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.habilidade h3 {
+    margin: 0 0 10px 0;
+}
+
+.habilidade p {
+    margin: 0 0 10px 0;
+}
+
+.habilidade a {
+    text-decoration: none;
+    color: #accef1;
+    font-weight: bold;
+}
+
+.habilidade a:hover {
+    text-decoration: underline;
+} 
+
+.contato-info {
+    text-align: center; /* Centraliza as informações de contato */
+    margin-bottom: 20px; /* Espaçamento entre as informações de contato e o formulário */
+}
+
+.contato-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contato-form {
+    max-width: 600px; /* Define uma largura máxima para o formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.contato-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Espaçamento entre os elementos do formulário */
+}
+
+.contato-form label {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.contato-form input,
+.contato-form textarea {
+    padding: 10px;
+    border: 1px solid #e6d6d6;
+    border-radius: 5px;
+    width: 100%; /* Faz com que os campos ocupem toda a largura disponível */
+}
+
+.contato-form button {
+    padding: 1%;
+    background: #b38c8c;
+    color: #fff;
+    border: none;
+    border-radius: 5cap;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contato-form button:hover {
+    background: #e2bebe;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones das redes sociais */
+    gap: 35px;
+    margin-top: 30px; /* Espaçamento entre o formulário e os ícones das redes sociais */
+}
+
+.social-icon {
+    width: 50px; /* Tamanho dos ícones sociais */
+    height: 50px;
+}
+
+.social-icon img {
+    width: 100%; /* Faz com que a imagem do ícone ocupe 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+footer {
+    background: #d5afaf;
+    color: #d5afaf;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media 
+       (max-width: 768px){}
+    .projects {
+        flex-direction: column;
+        align-items: center; /* Alinha os projetos no centro quando a tela é pequena */
+}
